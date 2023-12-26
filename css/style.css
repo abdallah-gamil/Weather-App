@@ -1,0 +1,87 @@
+body, #email
+{
+    background-color: rgb(30, 32, 43);
+}
+.app-container
+{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+#main-temp{
+    font-size: 90px;
+}
+
+
+.navbar .container .logo img{
+    width: 80px;
+    padding-right: 10px;
+}
+.bg-color{
+    color: #009ad8;
+}
+#home{
+    border: solid 2px #009ad8; 
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+.list-item{
+    border: solid 2px transparent;
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+.container ul li:hover{
+    border-color: #009ad8;
+    color: #009ad8;
+    cursor: pointer;
+}
+.bg-main-color
+{
+    background-color: rgba(30, 32, 43, 0.8);
+}
+
+.bg-sec-color
+{
+    background-color:#262936d1;
+}
+.text-light-blue
+{
+    color:#009ad8;
+}
+
+.footer-icons
+{
+    width: 20px;
+    height: 20px;
+}
+.find-location{
+    position: relative;
+}
+#submit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color:#009ad8 ;
+    
+}
+
+.footer .container input[type="text"] {
+    padding: 15px 100px 15px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+.form-subscribe{
+    position: relative;
+}
+.footer .form-subscribe input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    background-color: #009ad8;
+}

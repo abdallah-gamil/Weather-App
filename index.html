@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <div class="navbar bg-dark text-white py-4">
+        <div class="container">
+
+            <div class="logo">
+                <a href="#home"><img src="images/logo2x.png" alt="">
+                    <span>Weather App</span>
+                </a>
+            </div>
+
+            <ul class="list-unstyled d-flex my-auto me-5">
+                <li id="home" class="me-5 bg-color">Home</li>
+                <li class="me-5 list-item">Photos</li>
+                <li class="me-5 list-item">News</li>
+                <li class="me-5 list-item">Contact</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div class="app-container">
+        <div class="container px-3 py-5 text-center">
+            <!--Search Input-->
+            <form class="find-location">
+                <input type="text"
+                    class="w-100 mx-auto border border-2 rounded-pill py-3 px-4 bg-main-color mb-5 text-white"
+                    placeholder="Find your location..." id="search" />
+                <input class=" text-white border border-1 rounded-pill px-5 py-2" type="button" id="submit"
+                    value="Find">
+
+            </form>
+
+            <div class="row g-0">
+
+                <!--Today Data Section-->
+                <div class="item col-md-4 bg-sec-color m-0 rounded-bottom">
+                    <div class="d-flex justify-content-between bg-main-color text-light px-3 py-2 rounded-start"
+                        id="today-date">
+                        <p id="today-name">Friday</p>
+                        <span>
+                            <span id="today-number">22</span>
+                            <span id="month">December</span>
+                        </span>
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="today-location" class="fs-1">Cairo</p>
+                        <div id="today-temp" class="d-flex justify-content-between align-items-center">
+                            <span class=" fw-bolder">
+                                <span id="today-temp fw-bolder">17</span>
+                                <span><sup>o</sup> C</span>
+                            </span>
+                            <img id="today-img" src="images/116.png" alt="" />
+                        </div>
+                        <p id="today-condition-text" class="fs-6 text-light-blue">sunny</p>
+                    </div>
+                    <div class="item-footer d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <img src="images/icon-umberella.png" class="footer-icons me-2" alt="" />
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-wind.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind">30 km/h</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/icon-compass.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind-direction">NNE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tomorrow Data Section-->
+                <div class="item col-md-4 m-0 bg-main-color">
+                    <div class="py-2 text-center bg-sec-color text-light">
+                        <p class="next-day-name">Friday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="next-condition-img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next-max-temp">11</span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="next-min-temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next-condition-text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+
+                <!--After Tomorrow Data Section-->
+                <div class="item col-md-4 m-0 bg-sec-color rounded-bottom">
+                    <div class="py-2 text-center px-3 bg-main-color text-light rounded-end">
+                        <p class="next-day-name ">Friday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="next-condition-img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next-max-temp ">17</span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="next-min-temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next-condition-text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer py-5 px-3 bg-sec-color">
+        <div class="container px-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-subscribe">
+                        <input class="w-100 border border-2 rounded-pill" placeholder="Enter your email to subscribe..."
+                            type="text" id="email" value="">
+                        <input class=" text-white border border-1 rounded-pill px-3 py-2" type="submit" value="subscribe">
+    
+                    </div>
+    
+                </div>
+              
+                <div class="col-md-3 my-auto">
+                    <i class="fa-brands fa-facebook fa-2x text-white" ></i>
+                    <i class="fa-brands fa-google fa-2x text-white" ></i>
+                    <i class="fa-brands fa-twitter fa-2x text-white" ></i>
+                </div>
+
+            </div>
+            <div class=" w-100">
+                <h6 class="text-muted mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</h6>
+            </div>
+           
+
+        </div>
+        
+    </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
