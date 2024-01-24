@@ -1,5 +1,7 @@
 // input variables 
 let inputSearch = document.getElementById("search");
+let inputSubmit = document.getElementById("submit");
+
 
 // today data variables 
 let todayName = document.getElementById("today-name");
@@ -68,11 +70,13 @@ async function startApp (city= "cairo"){
         displaytodayData(weatherData);
         displayNext(weatherData);
     }
+    inputSearch.value = " ";
+  
 }
 
 startApp ();
 
-inputSearch.addEventListener("input", function(){
+inputSubmit.addEventListener("click", function(){
     startApp(inputSearch.value);
-
+    
 })
